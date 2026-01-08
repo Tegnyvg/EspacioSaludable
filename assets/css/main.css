@@ -132,6 +132,25 @@ nav a:hover {
   color: var(--verde-principal);
 }
 
+/* Back link used in guías internas */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 0.95rem;
+  border-radius: 10px;
+  background: var(--crema);
+  color: var(--texto);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.back-link:hover {
+  background: var(--acento-suave);
+  color: var(--verde-oscuro);
+}
+
 /* Hero Section */
 .hero {
   width: 100%;

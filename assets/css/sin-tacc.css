@@ -1,0 +1,164 @@
+/* Ajustes generales para la guía SIN TACC */
+body {
+  background: var(--crema-claro);
+  color: var(--texto);
+}
+
+.hero-buttons,
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.info-box {
+  background: var(--acento-suave);
+  border-left: 4px solid var(--verde-oscuro);
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  color: var(--verde-oscuro);
+  margin-top: 1rem;
+  box-shadow: var(--sombra-suave);
+}
+
+.text-block--highlight {
+  background: var(--crema);
+  border-left: 4px solid var(--verde-principal);
+  padding: 1.2rem 1.4rem;
+  border-radius: 12px;
+  margin-top: 1.2rem;
+  color: var(--texto);
+}
+
+.historical-block {
+  background: var(--blanco);
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: var(--sombra-suave);
+  border: 1px solid rgba(154, 168, 141, 0.18);
+}
+
+.historical-block h3 {
+  color: var(--verde-oscuro);
+  margin-bottom: 1rem;
+}
+
+.historical-quote {
+  margin-top: 1.5rem;
+  padding: 1.2rem 1.4rem;
+  background: var(--crema);
+  border-left: 4px solid var(--tierra);
+  border-radius: 12px;
+  font-style: italic;
+  color: var(--texto-suave);
+}
+
+.resources-block {
+  margin-top: 1.5rem;
+  background: var(--crema);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(154, 168, 141, 0.18);
+}
+
+.resources-block h4 {
+  margin-bottom: 0.8rem;
+}
+
+.resources-block ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.resources-block li a {
+  color: var(--verde-oscuro);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.resources-block li a:hover {
+  text-decoration: underline;
+}
+
+.resources-legal {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
+
+.foods-grid,
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.food-card,
+.tip-card {
+  background: var(--blanco);
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: var(--sombra-suave);
+  border: 1px solid rgba(154, 168, 141, 0.18);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.food-card:hover,
+.tip-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sombra-hover);
+}
+
+.food-icon,
+.tip-icon {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.food-card h4,
+.tip-card h4 {
+  color: var(--verde-oscuro);
+  margin-bottom: 0.4rem;
+}
+
+.tip-card p {
+  color: var(--texto-suave);
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 2px solid var(--verde-oscuro);
+  color: var(--verde-oscuro);
+}
+
+.btn-ghost:hover {
+  background: var(--verde-oscuro);
+  color: var(--blanco);
+}
+
+@media (max-width: 768px) {
+  .historical-block,
+  .resources-block {
+    padding: 1.25rem;
+  }
+
+  .foods-grid,
+  .tips-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .foods-grid,
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+}

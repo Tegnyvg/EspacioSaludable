@@ -11,13 +11,15 @@ Pagina ES/
 ├── index.html              # Landing con 6 guías de bienestar
 ├── keto.html               # Guía Keto Consciente (con acordeones)
 ├── vegano.html             # Guía Plant-Based Vegana
+├── assets/guides/sin-tacc.html # Guía Sin TACC consciente
 ├── .htaccess               # Configuración de seguridad (Apache)
 ├── .gitignore              # Archivos a excluir del repositorio
 ├── favicon.svg             # Ícono verde de marca
 ├── README.md               # Este archivo
 └── assets/
-    └── css/
-        └── main.css        # Estilos unificados (971 líneas)
+  └── css/
+    ├── main.css        # Estilos unificados (971 líneas)
+    └── sin-tacc.css    # Estilos específicos para la guía Sin TACC
 ```
 
 ### Archivos Principales
@@ -27,7 +29,9 @@ Pagina ES/
 | `index.html` | Página de inicio con 6 guías + productos | ~185 líneas |
 | `keto.html` | Guía keto con 5 acordeones expandibles | ~315 líneas |
 | `vegano.html` | Guía plant-based con nutrientes/meals grid | ~370 líneas |
+| `assets/guides/sin-tacc.html` | Guía sin TACC con grillas e info contextual | ~230 líneas |
 | `main.css` | Paleta de variables CSS, componentes reutilizables | ~971 líneas |
+| `sin-tacc.css` | Ajustes visuales para la guía sin TACC | ~120 líneas |
 
 ---
 
